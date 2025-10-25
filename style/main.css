@@ -4,11 +4,6 @@
   box-sizing: border-box;
 }
 
-.flex_center {
-  display: flex;
-  align-items: center;
-}
-
 @font-face {
   font-family: "Raleway";
   src: url("../fonts/Raleway.ttf") format("truetype");
