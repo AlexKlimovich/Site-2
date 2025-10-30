@@ -1,174 +1,309 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>House</title>
+    <link rel="stylesheet" href="./style/variables.css" />
+    <link rel="stylesheet" href="./style/components.css" />
     <link rel="stylesheet" href="./style/main.css" />
     <link rel="stylesheet" href="./style/header.css" />
     <link rel="stylesheet" href="./style/section_1.css" />
     <link rel="stylesheet" href="./style/section_2.css" />
-<body>
+  </head>
+  <body>
     <header class="header">
-    <div class="header_top">
+      <div class="header_top">
         <div class="logo">
           <img alt="Лого" src="./img/logo.svg" />
-          <p class="text_header text_logo">Ink. House</p>
+          <p class="text_header color_text_logo">Ink. House</p>
         </div>
-       <div class="header_menu">
-        <nav>
-          <ul class="header_menu text_header text_menu">
-            <li>Репродукции</li>
-            <li>Новинки</li>
-            <li>О нас</li>
-          </ul>
-        </nav>
-        <div class="header_cart">
-             <img class="img_cart" alt="Корзина" src="./img/cart.svg" />
-            </div>
-      </div>
+        <div class="header_menu">
+          <nav>
+            <ul class="header_menu text_header__textmenu">
+              <li>Репродукции</li>
+              <li>Новинки</li>
+              <li>О нас</li>
+            </ul>
+          </nav>
+          <div class="header_cart">
+            <img class="img_cart" alt="Корзина" src="./img/cart.svg" />
+          </div>
+        </div>
       </div>
     </header>
+
     <main>
       <section class="section_1">
         <div class="section_1_img">
-          <img alt="Птица" src="./img/bird.svg" />
-          </div>
-          <div class="section_1_content">
-            <h2>Реплики картин от <span class="h2_span">Ink. House</span></h2>
-            <p>Высокое качество отрисовки на плотной бумаге или льняном холсте. Редкие произведения, доступные цены.</p>
-             <button class="section_1_but">Продукция</button>
-            </div>
-        </section>
+          <img alt="Птица" src="./img/bird.png" />
+        </div>
+        <div class="content">
+          <h2>Реплики картин от <span class="h2_span">Ink. House</span></h2>
+          <p>
+            Высокое качество отрисовки на плотной бумаге или льняном холсте.
+            Редкие произведения, доступные цены.
+          </p>
+          <button class="primary-btn">Продукция</button>
+        </div>
+      </section>
       <section class="section_2">
-       <div class="section_2_head">
-        <div>
-          <h3>
-            Репродукции
-          </h3>
+        <div class="head">
+          <div>
+            <h3>Репродукции</h3>
           </div>
-         <div class="button-group">
-  <input type="radio" name="tabs" id="tab1" checked>
-  <label for="tab1" class="tab-btn">Франция</label>
+          <div class="button-group">
+            <input type="radio" name="tabs" id="tab1" checked />
+            <label for="tab1" class="tab-btn">Франция</label>
 
-  <input type="radio" name="tabs" id="tab2">
-  <label for="tab2" class="tab-btn">Германия</label>
+            <input type="radio" name="tabs" id="tab2" />
+            <label for="tab2" class="tab-btn">Германия</label>
 
-  <input type="radio" name="tabs" id="tab3">
-  <label for="tab3" class="tab-btn">Англия</label>
-</div>
-</div>
-<div class="s_2_all_product">
-  <div class="group-fr">
-  <div class="s_2_product_3">
-  <div class="section_2_product">
-    <img alt="Товар 1" src="./img/pic_1.svg" />
-    <p class="s_2_text_1">Марсель Руссо</p>
-    <p class="s_2_text_2">Охота Амура</p>
-    <p class="s_2_text_3">Холст, масло (50х80)</p>
-    <p class="s_2_text_4">14 500 руб</p>
-    <button class="section_1_but">В корзину</button>
-    </div>
-   <div class="section_2_product">
-    <img alt="Товар 1" src="./img/pic_2.svg" />
-    <p class="s_2_text_1">Анри Селин</p>
-    <p class="s_2_text_2">Дама с собачкой</p>
-    <p class="s_2_text_3">Акрил, бумага (50х80)</p>
-    <p class="s_2_text_4">16 500 руб</p>
-    <button class="section_1_but">В корзину</button>
-    </div>
-    <div class="section_2_product">
-    <img alt="Товар 1" src="./img/pic_3.svg" />
-    <p class="s_2_text_1">Франсуа Дюпон</p>
-    <p class="s_2_text_2">Процедура</p>
-    <p class="s_2_text_3">Цветная литография (40х60)</p>
-    <p class="s_2_text_4">20 000 руб</p>
-    <button class="section_1_but">В корзину</button>
-    </div>
-    </div>
-    <div class="s_2_product_3">
-    <div class="section_2_product">
-    <img alt="Товар 1" src="./img/pic_4.svg" />
-    <p class="s_2_text_1">Луи Детуш</p>
-    <p class="s_2_text_2">Роза</p>
-    <p class="s_2_text_3">Бумага, акрил (50х80)</p>
-    <p class="s_2_text_4">12 000 руб</p>
-    <button class="section_1_but">В корзину</button>
-    </div>
-    <div class="section_2_product_2">
-    <img alt="Товар 1" src="./img/pic_5.svg" />
-    <p class="s_2_text_1">Франсуа Дюпон</p>
-    <p class="s_2_text_2">Птичья трапеза</p>
-    <p class="s_2_text_3">Цветная литография (40х60)</p>
-    <p class="s_2_text_4">22 500 руб</p>
-    <button class="section_1_but">В корзину</button>
-    </div>
-    <div class="section_2_product ">
-    <img alt="Товар 1" src="./img/pic_6.svg" />
-    <p class="s_2_text_1">Пьер Моранж</p>
-    <p class="s_2_text_2">Пейзаж с рыбой</p>
-    <p class="s_2_text_3">Цветная литография (40х60)</p>
-    <p class="s_2_text_4">20 000 руб</p>
-    <button class="section_1_but">В корзину</button>
-    </div>
-    </div>
-    </div>
-  </div>
-  <div class="s_2_all_product_2">
-  <div class="s_2_product_3 group-en">
-  <div class="section_2_product">
-    <img alt="Товар 1" src="./img/pic_1.svg" />
-    <p class="s_2_text_1">Марсель Руссо</p>
-    <p class="s_2_text_2">Охота Амура</p>
-    <p class="s_2_text_3">Холст, масло (50х80)</p>
-    <p class="s_2_text_4">14 500 руб</p>
-    <button class="section_1_but">В корзину</button>
-    </div>
-   <div class="section_2_product">
-    <img alt="Товар 1" src="./img/pic_2.svg" />
-    <p class="s_2_text_1">Анри Селин</p>
-    <p class="s_2_text_2">Дама с собачкой</p>
-    <p class="s_2_text_3">Акрил, бумага (50х80)</p>
-    <p class="s_2_text_4">16 500 руб</p>
-    <button class="section_1_but">В корзину</button>
-    </div>
-    <div class="section_2_product">
-    <img alt="Товар 1" src="./img/pic_3.svg" />
-    <p class="s_2_text_1">Франсуа Дюпон</p>
-    <p class="s_2_text_2">Процедура</p>
-    <p class="s_2_text_3">Цветная литография (40х60)</p>
-    <p class="s_2_text_4">20 000 руб</p>
-    <button class="section_1_but">В корзину</button>
-    </div>
-    </div>
-    <div class="s_2_product_3 group-de">
-    <div class="section_2_product">
-    <img alt="Товар 1" src="./img/pic_4.svg" />
-    <p class="s_2_text_1">Луи Детуш</p>
-    <p class="s_2_text_2">Роза</p>
-    <p class="s_2_text_3">Бумага, акрил (50х80)</p>
-    <p class="s_2_text_4">12 000 руб</p>
-    <button class="section_1_but">В корзину</button>
-    </div>
-    <div class="section_2_product">
-    <img alt="Товар 1" src="./img/pic_5.svg" />
-    <p class="s_2_text_1">Франсуа Дюпон</p>
-    <p class="s_2_text_2">Птичья трапеза</p>
-    <p class="s_2_text_3">Цветная литография (40х60)</p>
-    <p class="s_2_text_4">22 500 руб</p>
-    <button class="section_1_but">В корзину</button>
-    </div>
-    <div class="section_2_product ">
-    <img alt="Товар 1" src="./img/pic_6.svg" />
-    <p class="s_2_text_1">Пьер Моранж</p>
-    <p class="s_2_text_2">Пейзаж с рыбой</p>
-    <p class="s_2_text_3">Цветная литография (40х60)</p>
-    <p class="s_2_text_4">20 000 руб</p>
-    <button class="section_1_but">В корзину</button>
-    </div>
-    </div>
-  </div>
-        </section>
-      </main>
-</body>
+            <input type="radio" name="tabs" id="tab3" />
+            <label for="tab3" class="tab-btn">Англия</label>
+          </div>
+        </div>
+        <div class="s_2_all_product">
+          <div class="group-fr">
+            <div class="s_2_product_3">
+              <div class="section_2_product">
+                <img alt="Товар 1" src="./img/pic_1.svg" />
+                <p class="section_2_product__image-title text_style">
+                  Марсель Руссо
+                </p>
+                <h4>Охота Амура</h4>
+                <p class="section_2_product__description text_style">
+                  Холст, масло (50х80)
+                </p>
+                <p class="section_2_product__price text_style">14 500 руб</p>
+                <button class="primary-btn">В корзину</button>
+              </div>
+              <div class="section_2_product">
+                <img alt="Товар 2" src="./img/pic_2.svg" />
+                <p class="section_2_product__image-title text_style">
+                  Анри Селин
+                </p>
+                <h4>Дама с собачкой</h4>
+                <p class="section_2_product__description text_style">
+                  Акрил, бумага (50х80)
+                </p>
+                <p class="section_2_product__price text_style">16 500 руб</p>
+                <button class="primary-btn">В корзину</button>
+              </div>
+              <div class="section_2_product">
+                <img alt="Товар 3" src="./img/pic_3.svg" />
+                <p class="section_2_product__image-title text_style">
+                  Франсуа Дюпон
+                </p>
+                <h4>Процедура</h4>
+                <p class="section_2_product__description text_style">
+                  Цветная литография (40х60)
+                </p>
+                <p class="section_2_product__price text_style">20 000 руб</p>
+                <button class="primary-btn">В корзину</button>
+              </div>
+            </div>
+            <div class="s_2_product_3">
+              <div class="section_2_product">
+                <img alt="Товар 4" src="./img/pic_4.svg" />
+                <p class="section_2_product__image-title text_style">
+                  Луи Детуш
+                </p>
+                <h4>Роза</h4>
+                <p class="section_2_product__description text_style">
+                  Бумага, акрил (50х80)
+                </p>
+                <p class="section_2_product__price text_style">12 000 руб</p>
+                <button class="primary-btn">В корзину</button>
+              </div>
+              <div class="section_2_product">
+                <img alt="Товар 5" src="./img/pic_5.svg" />
+                <p class="section_2_product__image-title text_style">
+                  Франсуа Дюпон
+                </p>
+                <h4>Птичья трапеза</h4>
+                <p class="section_2_product__description text_style">
+                  Цветная литография (40х60)
+                </p>
+                <p class="section_2_product__price text_style">22 500 руб</p>
+                <button class="primary-btn">В корзину</button>
+              </div>
+              <div class="section_2_product">
+                <img alt="Товар 6" src="./img/pic_6.svg" />
+                <p class="section_2_product__image-title text_style">
+                  Пьер Моранж
+                </p>
+                <h4>Пейзаж с рыбой</h4>
+                <p class="section_2_product__description text_style">
+                  Цветная литография (40х60)
+                </p>
+                <p class="section_2_product__price text_style">20 000 руб</p>
+                <button class="primary-btn">В корзину</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="s_2_all_product_2">
+          <div class="group-de">
+            <div class="s_2_product_3">
+              <div class="section_2_product">
+                <img alt="Товар 7" src="./img/pic_7.svg" />
+                <p class="section_2_product__image-title text_style">
+                  Курт Вернер
+                </p>
+                <h4>Над городом</h4>
+                <p class="section_2_product__description text_style">
+                  Цветная литография (40х60)
+                </p>
+                <p class="section_2_product__price text_style">16 000 руб</p>
+                <button class="primary-btn">В корзину</button>
+              </div>
+              <div class="section_2_product">
+                <img alt="Товар 8" src="./img/pic_8.svg" />
+                <p class="section_2_product__image-title text_style">
+                  Макс Рихтер
+                </p>
+                <h4>Птенцы</h4>
+                <p class="section_2_product__description text_style">
+                  Холст, масло (50х80)
+                </p>
+                <p class="section_2_product__price text_style">14 500 руб</p>
+                <button class="primary-btn">В корзину</button>
+              </div>
+              <div class="section_2_product">
+                <img alt="Товар 9" src="./img/pic_9.svg" />
+                <p class="section_2_product__image-title text_style">
+                  Мартин Майер
+                </p>
+                <h4>Среди листьев</h4>
+                <p class="section_2_product__description text_style">
+                  Цветная литография (40х60)
+                </p>
+                <p class="section_2_product__price text_style">20 000 руб</p>
+                <button class="primary-btn">В корзину</button>
+              </div>
+            </div>
+            <div class="s_2_product_3">
+              <div class="section_2_product">
+                <img alt="Товар 10" src="./img/pic_10.svg" />
+                <p class="section_2_product__image-title text_style">
+                  Герман Беккер
+                </p>
+                <h4>Яркая птица</h4>
+                <p class="section_2_product__description text_style">
+                  Цветная литография (40х60)
+                </p>
+                <p class="section_2_product__price text_style">13 000 руб</p>
+                <button class="primary-btn">В корзину</button>
+              </div>
+              <div class="section_2_product">
+                <img alt="Товар 11" src="./img/pic_11.svg" />
+                <p class="section_2_product__image-title text_style">
+                  Вульф Бауэр
+                </p>
+                <h4>Дятлы</h4>
+                <p class="section_2_product__description text_style">
+                  Бумага, акрил (50х80)
+                </p>
+                <p class="section_2_product__price text_style">20 000 руб</p>
+                <button class="primary-btn">В корзину</button>
+              </div>
+              <div class="section_2_product">
+                <img alt="Товар 12" src="./img/pic_12.svg" />
+                <p class="section_2_product__image-title text_style">
+                  Вальтер Хартманн
+                </p>
+                <h4>Большие воды</h4>
+                <p class="section_2_product__description text_style">
+                  Бумага, акрил (50х80)
+                </p>
+                <p class="section_2_product__price text_style">23 000 руб</p>
+                <button class="primary-btn">В корзину</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="s_2_all_product_3">
+          <div class="group-en">
+            <div class="s_2_product_3">
+              <div class="section_2_product">
+                <img alt="Товар 13" src="./img/pic_13.svg" />
+                <p class="section_2_product__image-title text_style">
+                  Пол Смит
+                </p>
+                <h4>Дикий зверь</h4>
+                <p class="section_2_product__description text_style">
+                  Акварель, бумага (50х80)
+                </p>
+                <p class="section_2_product__price text_style">19 500 руб</p>
+                <button class="primary-btn">В корзину</button>
+              </div>
+              <div class="section_2_product">
+                <img alt="Товар 14" src="./img/pic_14.svg" />
+                <p class="section_2_product__image-title text_style">
+                  Джон Уайт
+                </p>
+                <h4>Скалистый берег</h4>
+                <p class="section_2_product__description text_style">
+                  Цветная литография (40х60)
+                </p>
+                <p class="section_2_product__price text_style">17 500 руб</p>
+                <button class="primary-btn">В корзину</button>
+              </div>
+              <div class="section_2_product">
+                <img alt="Товар 15" src="./img/pic_15.svg" />
+                <p class="section_2_product__image-title text_style">
+                  Джим Уотсон
+                </p>
+                <h4>Река и горы</h4>
+                <p class="section_2_product__description text_style">
+                  Акварель, бумага (50х80)
+                </p>
+                <p class="section_2_product__price text_style">20 500 руб</p>
+                <button class="primary-btn">В корзину</button>
+              </div>
+            </div>
+            <div class="s_2_product_3">
+              <div class="section_2_product">
+                <img alt="Товар 16" src="./img/pic_16.svg" />
+                <p class="section_2_product__image-title text_style">
+                  Юджин Зиллион
+                </p>
+                <h4>Белый попугай</h4>
+                <p class="section_2_product__description text_style">
+                  Цветная литография (40х60)
+                </p>
+                <p class="section_2_product__price text_style">15 500 руб</p>
+                <button class="primary-btn">В корзину</button>
+              </div>
+              <div class="section_2_product">
+                <img alt="Товар 17" src="./img/pic_17.svg" />
+                <p class="section_2_product__image-title text_style">
+                  Эрик Гиллман
+                </p>
+                <h4>Ночная рыба</h4>
+                <p class="section_2_product__description text_style">
+                  Бумага, акрил (50х80)
+                </p>
+                <p class="section_2_product__price text_style">12 500 руб</p>
+                <button class="primary-btn">В корзину</button>
+              </div>
+              <div class="section_2_product">
+                <img alt="Товар 18" src="./img/pic_18.svg" />
+                <p class="section_2_product__image-title text_style">
+                  Альфред Барр
+                </p>
+                <h4>Рыжий кот</h4>
+                <p class="section_2_product__description text_style">
+                  Цветная литография (40х60)
+                </p>
+                <p class="section_2_product__price text_style">21 000 руб</p>
+                <button class="primary-btn">В корзину</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

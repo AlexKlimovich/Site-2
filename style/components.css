@@ -1,0 +1,45 @@
+.text-button {
+  color: var(--text-primary-color);
+  display: inline;
+  border: none;
+  background-color: transparent;
+  white-space: nowrap;
+  padding: 0 5px;
+
+  transition: all 0.3s ease;
+}
+
+.text-button:hover {
+  color: var(--text-color-active);
+  background-color: ;
+}
+.text-button:focus {
+  background-color: var(--button-primary-focus-color);
+  color: var(--text-primary-color);
+}
+
+.primary-btn {
+  display: block;
+  border: none;
+  background-color: transparent;
+  white-space: nowrap;
+  width: 100%;
+  padding: 21px;
+  color: var(--text-secondary-color);
+  border: 1px solid var(--text-secondary-color);
+  font-size: 20px;
+  line-height: 100%;
+  font-weight: 500;
+  font-family: "Raleway", sans-serif;
+  cursor: pointer;
+}
+
+.primary-btn:hover {
+  background-color: var(--button-primary-hover-color);
+  color: var(--text-color-active);
+}
+
+.primary-btn:active {
+  background-color: var(--button-primary-color-active);
+  color: var(--text-color-active);
+}
