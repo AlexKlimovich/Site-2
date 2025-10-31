@@ -8,10 +8,8 @@
 .header_top {
   display: flex;
   justify-content: space-between;
-  padding-right: 166.92px;
-  padding-left: 165px;
   align-items: center;
-  width: 100%;
+  width: 1140px;
   margin: 0 auto;
 }
 
@@ -34,10 +32,10 @@
   li:hover {
     color: #fff;
   }
+}
 
-  .text_menu {
-    font-weight: 500;
-  }
+.text_menu {
+  font-weight: 500;
 }
 
 .logo {

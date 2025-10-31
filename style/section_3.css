@@ -1,0 +1,32 @@
+.section_3 {
+  display: flex;
+  width: 100%;
+  height: 574px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 70px;
+  background: url("../img/bg.jpg") no-repeat center/cover;
+  rotate: -180 deg;
+
+  &:after {
+    content: "";
+    background: url("../img/gradient.png") no-repeat center;
+    width: 1004px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &:before {
+    content: "";
+    background: url("../img/grad.png") no-repeat center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 70%;
+    mix-blend-mode: soft-light;
+  }
+}

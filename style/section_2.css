@@ -4,7 +4,6 @@
   width: 1110px;
   margin: 0 auto;
   margin-top: 70px;
-  margin-bottom: 100px;
 
   .head {
     display: flex;
@@ -99,7 +98,7 @@
 
 input[type="radio"]:checked + label {
   background-color: var(--button-primary-color-active);
-  color: var(--text-color-active: );
+  color: var(--text-color-active);
 }
 
 .section_2_product,
