@@ -1,0 +1,82 @@
+.promo {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 574px;
+  margin: 70px auto 0 auto;
+  align-items: center;
+  padding: 70px 165px;
+}
+
+.promo__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.promo::after {
+  content: "";
+  background: url("../img/gradient.png") no-repeat center;
+  width: 1004px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.promo::before {
+  content: "";
+  background: url("../img/grad.png") no-repeat center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.7;
+  mix-blend-mode: soft-light;
+  z-index: 2;
+}
+
+.promo__content {
+  position: relative;
+  z-index: 3;
+  max-width: 540px;
+  display: flex;
+  flex-direction: column;
+}
+
+.promo__headline {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+.promo__icon {
+  display: block;
+}
+
+.promo__title {
+  font-size: 40px;
+  line-height: 100%;
+  font-weight: 500;
+  color: var(--text-color-active);
+  margin: 0;
+}
+
+.promo__text {
+  font-size: 18px;
+  line-height: 150%;
+  font-weight: 500;
+  color: var(--text-color-active);
+  margin: 0;
+}
+
+.promo__text + .promo__text {
+  margin-top: 20px;
+}
