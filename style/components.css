@@ -1,0 +1,112 @@
+.text-button {
+  color: var(--text-primary-color);
+  display: inline;
+  border: none;
+  background-color: transparent;
+  white-space: nowrap;
+  padding: 0 5px;
+
+  transition: all 0.3s ease;
+}
+
+.text-button:hover {
+  color: var(--text-color-active);
+  background-color: ;
+}
+.text-button:focus {
+  background-color: var(--button-primary-focus-color);
+  color: var(--text-primary-color);
+}
+
+.primary-btn {
+  display: block;
+  border: none;
+  background-color: transparent;
+  white-space: nowrap;
+  width: 100%;
+  padding: 21px;
+  color: var(--text-secondary-color);
+  border: 1px solid var(--text-secondary-color);
+  font-size: 20px;
+  line-height: 100%;
+  font-weight: 500;
+  font-family: "Raleway", sans-serif;
+  cursor: pointer;
+
+  &:hover {
+    animation: hover-glow 0.6s ease-in-out forwards;
+    background-color: var(--button-primary-hover-color);
+    color: var(--text-color-active);
+    animation: wave 1.5s ease-in-out infinite;
+    transform-origin: center;
+  }
+
+  &:active {
+    background-color: var(--button-primary-color-active);
+    color: var(--text-color-active);
+  }
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(2deg);
+  }
+  20% {
+    transform: rotate(-2deg);
+  }
+  30% {
+    transform: rotate(2deg);
+  }
+  40% {
+    transform: rotate(-1deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.promo__btn {
+  display: block;
+  border: none;
+  padding: 21px 60px;
+  background-color: var(--promo-btn-default-color);
+  color: var(--promo-btn-text-color);
+  font-size: 20px;
+  line-height: 100%;
+  font-weight: 500;
+  font-family: "Raleway", sans-serif;
+  cursor: pointer;
+  margin-top: 60px;
+  width: fit-content;
+}
+.promo__btn:hover {
+  background-color: var(--promo-btn-hover-color);
+  color: var(--promo-btn-text-color);
+  animation: glow 2s ease-in-out infinite;
+}
+
+.promo__btn:active {
+  background-color: var(--promo-btn-color-active);
+  color: var(--promo-btn-text-color);
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px rgba(89, 141, 102, 0.4),
+      0 0 20px rgba(89, 141, 102, 0.3), 0 0 30px rgba(89, 141, 102, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(89, 141, 102, 0.8),
+      0 0 40px rgba(89, 141, 102, 0.6), 0 0 60px rgba(89, 141, 102, 0.4);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(89, 141, 102, 0.4),
+      0 0 20px rgba(89, 141, 102, 0.3), 0 0 30px rgba(89, 141, 102, 0.2);
+  }
+}
